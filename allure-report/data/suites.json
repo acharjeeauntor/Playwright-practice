@@ -1,0 +1,34 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "chromium",
+    "children" : [ {
+      "name" : "login.test.js",
+      "children" : [ {
+        "name" : "Login test",
+        "children" : [ {
+          "name" : "Login form test",
+          "uid" : "779346989aadaf60",
+          "parentUid" : "2222a4c90da84bdbd3d7f7b945964e0d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1644084899867,
+            "stop" : 1644084908077,
+            "duration" : 8210
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "2222a4c90da84bdbd3d7f7b945964e0d"
+      } ],
+      "uid" : "7f1a85d548949ecdae4f8bf5a11ee16f"
+    } ],
+    "uid" : "36c900977e1d8b81a2c6893cc82bfc01"
+  } ],
+  "name" : "suites"
+}

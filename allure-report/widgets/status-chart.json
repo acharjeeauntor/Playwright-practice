@@ -1,0 +1,11 @@
+[ {
+  "uid" : "779346989aadaf60",
+  "name" : "Login form test",
+  "time" : {
+    "start" : 1644084899867,
+    "stop" : 1644084908077,
+    "duration" : 8210
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

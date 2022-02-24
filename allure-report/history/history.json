@@ -1,0 +1,21 @@
+{
+  "chromium login.test.js Login test Login form test" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "779346989aadaf60",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644084899867,
+        "stop" : 1644084908077,
+        "duration" : 8210
+      }
+    } ]
+  }
+}
