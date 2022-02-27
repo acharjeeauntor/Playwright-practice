@@ -1,14 +1,31 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
-    "name" : "Login form test",
-    "uid" : "779346989aadaf60",
+    "name" : "test-1 @smokeTest",
+    "uid" : "18eb48a520c7ccee",
     "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
     "status" : "passed",
     "time" : {
-      "start" : 1644084899867,
-      "stop" : 1644084908077,
-      "duration" : 8210
+      "start" : 1645845391397,
+      "stop" : 1645845393880,
+      "duration" : 2483
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test-5 @smokeTest",
+    "uid" : "f6c5b9ab6757c882",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1645845393880,
+      "stop" : 1645845394612,
+      "duration" : 732
     },
     "flaky" : false,
     "newFailed" : false,

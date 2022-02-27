@@ -14,7 +14,10 @@ const config = {
     video: 'retain-on-failure',
     trace: 'retain-on-failure'
   },
-  testMatch: 'skipLogin.test.js',
+  //grep: [new RegExp("@smokeTest")],
+  //grepInvert: [new RegExp("@smokeTest")],
+  //grep: [new RegExp("@smokeTest"), new RegExp("@fast")],
+  testMatch: 'annotations.test.js',
 
   /* Maximum time one test can run for. */
 
@@ -28,7 +31,7 @@ const config = {
     // timeout: 7000
   },
   //testMatch: ['login.test.js'],
-  
+
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   //forbidOnly: !!process.env.CI,
 
@@ -40,7 +43,9 @@ const config = {
 
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   //reporter: 'allure-playwright',
-  reporter: 'list',
+  // reporter: 'list',
+  reporter: [['list'],['dot'],['allure-playwright']],
+
 
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
 

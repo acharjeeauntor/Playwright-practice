@@ -19,14 +19,14 @@ test.describe('test demo qa site new tab page', () => {
     test("test-5 @smokeTest", async ({ page, context, browserName }) => {
         console.log("test 5")
 
-        await exec('ls -la',
-            (error, stdout, stderr) => {
-                console.log(stdout);
-                console.log(stderr);
-                if (error !== null) {
-                    console.log(`exec error: ${error}`);
-                }
-            });
+        // await exec('ls -la',
+        //     (error, stdout, stderr) => {
+        //         console.log(stdout);
+        //         console.log(stderr);
+        //         if (error !== null) {
+        //             console.log(`exec error: ${error}`);
+        //         }
+        //     });
     })
 
 })
