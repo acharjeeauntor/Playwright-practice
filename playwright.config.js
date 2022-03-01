@@ -1,6 +1,7 @@
 // @ts-check
 const { devices } = require('@playwright/test');
-const path = require('path');
+// const path = require('path');
+//import devices from "@playwright/test"
 
 /**
  * @see https://playwright.dev/docs/test-configuration
@@ -17,7 +18,8 @@ const config = {
   //grep: [new RegExp("@smokeTest")],
   //grepInvert: [new RegExp("@smokeTest")],
   //grep: [new RegExp("@smokeTest"), new RegExp("@fast")],
-  testMatch: 'annotations.test.js',
+  workers:4,
+  testMatch: 'clipboard.test.js',
 
   /* Maximum time one test can run for. */
 
@@ -51,21 +53,21 @@ const config = {
 
   /* Configure projects for major browsers */
   projects: [
-    // {
-    //   name: 'chromium',
-
-    //   /* Project-specific settings. */
-    //   use: {
-    //     ...devices['Desktop Chrome'],
-    //   },
-    // },
-
     {
-      name: 'firefox',
+      name: 'chromium',
+
+      /* Project-specific settings. */
       use: {
-        ...devices['Desktop Firefox'],
+        ...devices['Desktop Chrome'],
       },
     },
+
+    // {
+    //   name: 'firefox',
+    //   use: {
+    //     ...devices['Desktop Firefox'],
+    //   },
+    // },
 
     // {
     //   name: 'webkit',
@@ -113,3 +115,4 @@ const config = {
   // },
 };
 module.exports = config;
+//export default config
