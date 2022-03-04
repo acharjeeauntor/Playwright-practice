@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "child_process": "^1.0.2",
-    "clipboardy": "^3.0.0"
+    "clipboardy": "^3.0.0",
+    "tesseract.js": "^2.1.5"
   }
 }

@@ -8,7 +8,7 @@ const { devices } = require('@playwright/test');
  * @type {import('@playwright/test').PlaywrightTestConfig}
  */
 const config = {
-
+timeout:900000,
   use: {
     //baseURL: 'https://demo.guru99.com/V4/',
     screenshot: 'only-on-failure',
@@ -19,7 +19,7 @@ const config = {
   //grepInvert: [new RegExp("@smokeTest")],
   //grep: [new RegExp("@smokeTest"), new RegExp("@fast")],
   workers:4,
-  testMatch: 'clipboard.test.js',
+  testMatch: 'textfromimage.test.js',
 
   /* Maximum time one test can run for. */
 
@@ -30,7 +30,8 @@ const config = {
      * Maximum time expect() should wait for the condition to be met.
      * For example in `await expect(locator).toHaveText();`
      */
-    // timeout: 7000
+    //timeout: 600000
+  
   },
   //testMatch: ['login.test.js'],
 
@@ -46,7 +47,7 @@ const config = {
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   //reporter: 'allure-playwright',
   // reporter: 'list',
-  reporter: [['list'],['dot'],['allure-playwright']],
+  reporter: [['list'], ['json', { outputFile: "test-result.json" }], ['html', { open: "never" }]],
 
 
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
