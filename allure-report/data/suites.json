@@ -1,51 +1,5 @@
 {
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
-  "children" : [ {
-    "name" : "firefox",
-    "children" : [ {
-      "name" : "tests/groupTest.test.js",
-      "children" : [ {
-        "name" : "test demo qa site new tab page",
-        "children" : [ {
-          "name" : "test-1 @smokeTest",
-          "uid" : "18eb48a520c7ccee",
-          "parentUid" : "8780ccbd6ac0b10466c1f27bf9e00da5",
-          "status" : "passed",
-          "time" : {
-            "start" : 1645845391397,
-            "stop" : 1645845393880,
-            "duration" : 2483
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "newPassed" : false,
-          "newBroken" : false,
-          "retriesCount" : 0,
-          "retriesStatusChange" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "test-5 @smokeTest",
-          "uid" : "f6c5b9ab6757c882",
-          "parentUid" : "8780ccbd6ac0b10466c1f27bf9e00da5",
-          "status" : "passed",
-          "time" : {
-            "start" : 1645845393880,
-            "stop" : 1645845394612,
-            "duration" : 732
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "newPassed" : false,
-          "newBroken" : false,
-          "retriesCount" : 0,
-          "retriesStatusChange" : false,
-          "parameters" : [ ]
-        } ],
-        "uid" : "8780ccbd6ac0b10466c1f27bf9e00da5"
-      } ],
-      "uid" : "e580a6563e4787f94fc72daa296749f5"
-    } ],
-    "uid" : "ed39c131db56604842b18253a0c76267"
-  } ],
-  "name" : "suites"
+  "name" : "suites",
+  "children" : [ ]
 }

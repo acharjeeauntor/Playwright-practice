@@ -19,7 +19,7 @@ timeout:900000,
   //grepInvert: [new RegExp("@smokeTest")],
   //grep: [new RegExp("@smokeTest"), new RegExp("@fast")],
   workers:4,
-  testMatch: 'textfromimage.test.js',
+  testMatch: 'waitForApiResponse.test.js',
 
   /* Maximum time one test can run for. */
 
@@ -46,8 +46,8 @@ timeout:900000,
 
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   //reporter: 'allure-playwright',
-  // reporter: 'list',
-  reporter: [['list'], ['json', { outputFile: "test-result.json" }], ['html', { open: "never" }]],
+  reporter: 'html',
+  //reporter: [['list'], ['json', { outputFile: "test-result.json" }], ['html', { open: "never" }]],
 
 
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */

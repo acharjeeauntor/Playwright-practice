@@ -1,3 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sat Feb 26 09:16:31 BDT 2022","Sat Feb 26 09:16:33 BDT 2022","2483","firefox","tests/groupTest.test.js","test demo qa site new tab page","","","test-1 @smokeTest",""
-"passed","Sat Feb 26 09:16:33 BDT 2022","Sat Feb 26 09:16:34 BDT 2022","732","firefox","tests/groupTest.test.js","test demo qa site new tab page","","","test-5 @smokeTest",""
