@@ -1,8 +1,6 @@
-const {test} = require("@playwright/test")
-var clipboard = import("clipboardy")
-// import clipboard from 'clipboardy';
-// import test from '@playwright/test'
 
+import {test} from '@playwright/test'
+import clipboard from 'clipboardy';
 test("Access Clipboard",async({page})=>{
 await test.step("Goto the https://clipboardjs.com/ ",async()=>{
     await page.goto("https://clipboardjs.com/")

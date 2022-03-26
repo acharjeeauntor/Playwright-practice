@@ -1,4 +1,6 @@
-const {test} = require("@playwright/test")
+// const {test} = require("@playwright/test")
+
+import {test} from "@playwright/test"
 
 test("Wait For API response test",async({page})=>{
 await page.goto("https://letcode.in/elements")
