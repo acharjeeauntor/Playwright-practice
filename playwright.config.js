@@ -1,13 +1,13 @@
 // @ts-check
-const { devices } = require('@playwright/test');
-// const path = require('path');
-//import devices from "@playwright/test"
+// import { devices,PlaywrightTestConfig } from'@playwright/test'
+const {devices,PlaywrightTestConfig} = require('@playwright/test')
 
 /**
  * @see https://playwright.dev/docs/test-configuration
  * @type {import('@playwright/test').PlaywrightTestConfig}
  */
-const config = {
+ const config= {
+   //fullyParallel:true,
 timeout:900000,
   use: {
     //baseURL: 'https://demo.guru99.com/V4/',
@@ -19,7 +19,7 @@ timeout:900000,
   //grepInvert: [new RegExp("@smokeTest")],
   //grep: [new RegExp("@smokeTest"), new RegExp("@fast")],
   workers:4,
-  testMatch: 'waitForApiResponse.test.js',
+  testMatch: 'visiual.test.js',
 
   /* Maximum time one test can run for. */
 
@@ -56,6 +56,7 @@ timeout:900000,
   projects: [
     {
       name: 'chromium',
+      //fullyParallel:true,
 
       /* Project-specific settings. */
       use: {
@@ -115,5 +116,5 @@ timeout:900000,
   //   port: 3000,
   // },
 };
-module.exports = config;
 //export default config
+module.exports = config;
